@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">SharedPreferencesTest</string>
+    <string name="boardtext">Here is a demo of sharedPreferences...ENJOY</string>
+</resources>
