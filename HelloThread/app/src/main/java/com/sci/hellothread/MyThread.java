@@ -1,4 +1,10 @@
 package com.sci.hellothread;
 
-public class MyThread {
+import android.util.Log;
+
+public class MyThread extends Thread {
+    @Override
+    public void run() {
+        Log.d("TAG",Thread.currentThread().getName()+ ".run");
+    }
 }

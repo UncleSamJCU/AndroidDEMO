@@ -1,4 +1,11 @@
 package com.sci.hellothread;
 
-public class MyRunnable {
+import android.util.Log;
+
+public class MyRunnable implements Runnable {
+
+    @Override
+    public void run() {
+        Log.d("RUNNABLE",Thread.currentThread().getName()+".is running...");
+    }
 }

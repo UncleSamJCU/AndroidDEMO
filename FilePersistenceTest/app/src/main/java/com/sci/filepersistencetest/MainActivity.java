@@ -2,6 +2,7 @@ package com.sci.filepersistencetest;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.app.Dialog;
 import android.content.Context;
 import android.os.Bundle;
 import android.util.Log;
@@ -29,15 +30,16 @@ public class MainActivity extends AppCompatActivity {
 
 
         mEditText = findViewById(R.id.edit);
+
         mBtnSaveFile = findViewById(R.id.btn_saveFile);
 
         mBtnSaveFile.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 //Log.d("Mainactivity","---file save------------");
-                String inputText = mEditText.getText().toString();
-                Log.d("---inputtext---",inputText);
-                //saveFile(inputText);
+                 String inputText = mEditText.getText().toString();
+//                Log.d("---inputtext---",inputText);
+                 saveFile(inputText);
                 //TODO: 2020年11月21日20:18:31
 
                 Toast.makeText(MainActivity.this,"File saved!",Toast.LENGTH_SHORT).show();
@@ -50,7 +52,10 @@ public class MainActivity extends AppCompatActivity {
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        //here could add some logic for the VIEW
+//                String inputText = mEditText.getText().toString();
+//                Log.d("---inputtext---",inputText);
+//        Toast.makeText(MainActivity.this,"File saved!",Toast.LENGTH_SHORT).show();
+//        //here could add some logic for the VIEW
     }
 
     public void saveFile(String inputText){

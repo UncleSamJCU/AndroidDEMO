@@ -1,4 +1,4 @@
-package models;
+package com.sci.litepaltest.models;
 
 import org.litepal.annotation.Column;
 import org.litepal.crud.LitePalSupport;
@@ -9,6 +9,7 @@ public class Album extends LitePalSupport {
     private String name;
 
     @Column(index = true)
+//    @Column(index = true, nullable = false)
     private float price;
 
     public String getName(){
